@@ -16,7 +16,7 @@ public:
 		Notes.push_back(std::move(note));
 	}
 	//获取所有卡片
-	std::vector<Note>& getNotes() {
+	const std::vector<Note>& getNotes() const {
 		return Notes;
 	}
 	//查看卡片

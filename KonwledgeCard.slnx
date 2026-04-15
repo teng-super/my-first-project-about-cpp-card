@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="KonwledgeCard.vcxproj" Id="3aa0ccb4-cc7c-4763-8fdc-de9291f71be3" />
+</Solution>
