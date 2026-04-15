@@ -14,7 +14,7 @@ public:
 	void save(const repository& repo) {
 		std::ofstream out(filename);
 		if (!out.is_open()) {
-			throw std::runtime_error("我去，没打开？你再检查检查");
+			throw std::runtime_error("File failed to open for saving!");
 		}
 		for (const auto& note : repo.getNotes()) {
 			out<< note.getTitle() << "|" << note.getContext() << "|";
@@ -34,7 +34,7 @@ public:
 	void load(repository& repo) {
 		std::ifstream in(filename);
 		if (!in.is_open()) {
-			throw std::runtime_error("打开了一片空气");
+			throw std::runtime_error("File failed to open for loading!");
 		}
 		repo.clear();//加载前先清空仓库
 		std::string line;//用来装每次读出的一行

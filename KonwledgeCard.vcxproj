@@ -25,6 +25,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
+    <None Include="学习笔记\MiniNoteHub_全方位终极笔记.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="command.hpp" />
